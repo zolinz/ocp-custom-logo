@@ -15,6 +15,10 @@ app.get('/mystyle', function (req, res) {
     res.sendFile(path.join( __dirname + '/public/css/mylogo.css'));
 });
 
+app.get('/ocp-custom', function (req, res) {
+    res.sendFile(path.join( __dirname + '/public/css/my-ocp-logo.css'));
+});
+
 
 app.get('/myimage', function (req, res) {
     res.sendFile(path.join( __dirname + '/public/css/Joker.png'));
